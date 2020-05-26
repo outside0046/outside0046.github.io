@@ -8,8 +8,10 @@ color:#FFFFFF;
 }
 
 #page {
-width:1045px;
-height:1450px;
+wight:86%;
+max-width:1045px;
+height:100%;
+max-height:1450px;
 top:10px;
 background-image:url(images/page.png);
 margin:auto;
