@@ -1,12 +1,10 @@
 #body {
 background-image:url(images/background.png);
-height:1500px;
-width:1700px;
 font-size:10pt;
 font-family:Arial;
 margin:0;
 padding:0;
-color:#FFFFFF;
+color:#FF5FFF;
 }
 
 #page {
