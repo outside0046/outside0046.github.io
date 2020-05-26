@@ -1,3 +1,5 @@
+@media only screen and (min-width : 1824px) {
+
 body {
 background-image:url(images/background.png);
 font-size:10pt;
@@ -180,4 +182,5 @@ text-decoration:none;
 
 a:hover {
 text-decoration:underline;
+}
 }
