@@ -1,5 +1,7 @@
 body {
 background-image:url(images/background.png);
+width:99%;
+max-width:1700px;
 font-size:10pt;
 font-family:Arial;
 margin:0;
