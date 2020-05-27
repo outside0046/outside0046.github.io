@@ -7,6 +7,8 @@ font-family:Arial;
 margin:0;
 padding:0;
 color:#FFFFFF;
+left: 50%;
+margin-right: -50%;
 }
 
 #page {
