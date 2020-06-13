@@ -1,44 +1,51 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+background-image:url(images/background.png);
+font-size:10pt;
+font-family:Arial;
+margin:0;
+padding:0;
+color:#FFFFFF;
 }
+
 html{
     font-size: 20px;  
     line-height: 1.6;
-    font-family: sans-serif; 
+    font-style: initial;
+	font-family: initial;
 }
+
 
 ul{
     float: right;
     display: inline;
     padding: 0 20px 0 20px;
 }
-.page{
+page{
     display: none;
     width: 100%;
     min-height: 100%; 
     position: fixed;  
     padding: 1rem 2rem;
 }
-.active{
+active{
     display: block; 
 }
 #home{
-    background-color: beige;
+    background-color: #F5F5DC;
 }
 #list{
-    background-color: beige;
+    background-color: #F5F5DC;
 }
 #detail{
-    background-color: beige;
+    background-color: #F5F5DC;
 }
 h1{
     font-size: 2rem;
     font-weight: 600;
     transition: all 0.4s;
 }
-.big{
+
+big{
     font-size: 5rem;
     font-weight: 900;
 }
@@ -67,7 +74,8 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-.container {
+
+container {
   border-radius: 2.5px;
   background-color: #f2f2f2;
   padding: 20px;
