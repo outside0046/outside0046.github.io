@@ -42,15 +42,7 @@ padding-left:23px;
 background-image:url(images/menulink.png);
 }
 
-#home{
-    background-color: beige;
-}
-#list{
-    background-color: beige;
-}
-#detail{
-    background-color: beige;
-}
+
 h1{
     font-size: 2rem;
     font-weight: 600;
