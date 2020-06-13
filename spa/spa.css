@@ -25,12 +25,21 @@ ul{
     display: block; 
 }
 
+body {
+background-image:url(images/background.png);
+font-size:10pt;
+font-family:Arial;
+margin:0;
+padding:0;
+color:#FFFFFF;
+}
+
 #menulinks {
 clear:both;
 width:1022px;
 height:55px;
 padding-left:23px;
-background-image:url(images/menulinks.jpg);
+background-image:url(images/menulinks.png);
 }
 
 #home{
