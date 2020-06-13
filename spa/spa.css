@@ -34,7 +34,17 @@ padding:0;
 color:#FFFFFF;
 }
 
-#menulinks {
+#page {
+width:1045px;
+height:1450px;
+top:10px;
+background-image:url(images/page.png);
+margin:auto;
+margin-top:10px;
+padding:auto;
+}
+
+#menulink {
 clear:both;
 width:1022px;
 height:55px;
