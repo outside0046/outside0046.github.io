@@ -14,72 +14,7 @@ html{
 	font-family: initial;
 }
 
-nav {
-  margin-top: 40px;
-  padding: 24px;
-  text-align: center;
-  font-family: Raleway;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
 
-#nav-3 {
-  background-image:url(images/menulink.png);
-  margin-top: 0px;
-}
-
-
-.link-3 {
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-.link-3:hover {
-  background-image:url(images/menuhover3.png);
-  color: #EEA200;
-  padding: 24px 10px;
-}
-
-.link-4 {
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-.link-4:hover {
-  background-image:url(images/menuhover4.png);
-  color: #EEA200;
-  padding: 24px 10px;
-}
-.link-5 {
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-.link-5:hover {
-  background-image:url(images/menuhover5.png);
-  color: #EEA200;
-  padding: 24px 10px;
-}
-.link-6 {
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-.link-6:hover {
-  background-image:url(images/menuhover6.png);
-  color: #EEA200;
-  padding: 24px 10px;
 ul{
     float: right;
     display: inline;
