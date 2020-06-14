@@ -16,7 +16,7 @@ width: 100%;
 }
 
 body {
-background-image:url(images/background.png);
+background-image:url(data/images/background.png);
 text-align: justify;
 font-family: courier;
 font-size: 20;
