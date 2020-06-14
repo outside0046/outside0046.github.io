@@ -50,14 +50,6 @@ padding:0;
 color:#0D2601;
 }*/
 
-#menulinks {
-clear:both;
-width:1022px;
-height:55px;
-padding-left:23px;
-background-image:url(images/menulinks.png);
-}
-
 h1{
     font-size: 2rem;
     font-weight: 600;
