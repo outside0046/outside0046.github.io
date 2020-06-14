@@ -37,6 +37,12 @@ margin:0;
 padding:0;
 }
 
+#myphoto {
+clear:both;
+margin:500px;
+background-image:url(images/me2.png);
+}
+
 #menulinks {
 clear:both;
 width:1022px;
