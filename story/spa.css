@@ -30,6 +30,27 @@ padding:0;
 color:#D6FF99;
 }
 
+#page {
+width:1045px;
+height:1450px;
+top:10px;
+background-image:url(data/images/page3.png);
+margin:auto;
+margin-top:10px;
+padding:auto;
+}
+
+#header {
+clear:both;
+width:1150px;
+height:350px;
+height:100px;
+background-image:url(data/images/header.png);
+padding-top:73px;
+padding-left:50px;
+}
+
+
 ul{
     float: right;
     display: inline;
