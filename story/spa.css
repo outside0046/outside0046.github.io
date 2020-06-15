@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+#page {
+width:1045px;
+height:1450px;
+top:10px;
+background-image:url(data/images/page3.png);
+margin-top:10px;
+margin:auto;
+padding:auto;
+}
+
 html {
 text-align: justify;
 font-family: courier;
@@ -29,15 +39,7 @@ padding:0;
 color:#D6FF99;
 }
 
-#page {
-width:1045px;
-height:1450px;
-top:10px;
-background-image:url(data/images/page3.png);
-margin-top:10px;
-margin:auto;
-padding:auto;
-}
+
 
 ul{
     float: right;
