@@ -15,8 +15,6 @@ height: 100%;
 width: 60%;
 }
 
-@media only screen and (max-width: 1700px)
-{ 
 body {
 background-image:url(data/images/background2.png);
 text-align: center;
@@ -32,7 +30,7 @@ margin:0;
 padding:0;
 color:#D6FF99;
     }
-}
+
 
 @media only screen and (max-width: 900px)
 { 
