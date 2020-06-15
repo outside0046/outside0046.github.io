@@ -31,21 +31,6 @@ padding:0;
 color:#D6FF99;
 }
 
-#page {
-text-align: center;
-align: center;    
-min-width: 80%;   
-min-height: 100%; 
-left: 50%;
-margin-right: -50%;    
-top:0px;
-position: fixed;   
-background-image:url(data/images/page3.png);
-margin:auto;
-margin-top:0px;
-padding:auto;
-}
-
 ul{
     float: right;
     display: inline;
