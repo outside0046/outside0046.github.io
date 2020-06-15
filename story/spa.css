@@ -17,8 +17,7 @@ width: 60%;
 
 body {
 background-image:url(data/images/background.png);
-text-align: center;
-font-fatext-align:justify;
+text-align: justify;
 font-size: 20;
 font-weight: bold;    
 font-family: Arial;
