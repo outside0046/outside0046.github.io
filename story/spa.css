@@ -15,14 +15,14 @@ padding:auto;
 }
 
 html {
-text-align: justify;
+text-align: center;
 font-family: courier;
 font-size: 20;
 font-weight: bold;
 color: #D6FF99;
 background-color: #FFBF9C;
 height: 100%;
-width: 100%;
+width: 60%;
 }
 
 body {
