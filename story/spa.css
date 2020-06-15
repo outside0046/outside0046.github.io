@@ -34,9 +34,7 @@ width:1045px;
 height:1450px;
 top:10px;
 background-image:url(story/images/page.png);
-margin:auto;
 margin-top:10px;
-padding:auto;
 }
 
 ul{
@@ -106,6 +104,7 @@ input[type=submit]:hover {
 
 a {
 color: #96B7EB;
+border-bottom: 0px solid #B7A8FF;    
 text-decoration: none;
 }
 
