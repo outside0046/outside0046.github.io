@@ -32,7 +32,7 @@ padding:0;
 color:#D6FF99;
     }}
 
-@media only screen and (max-width: 720px){ 
+@media only screen and (max-width: 900px){ 
 body {
 background-image:url(data/images/background3.png);
 text-align: center;
