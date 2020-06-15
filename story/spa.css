@@ -32,12 +32,12 @@ color:#D6FF99;
     }
 
 
-@media all and 
-    (min-device-width: 300px)
+@media all 
+ and (min-device-width: 300px)
  and(max-device-width: 900px)
 { 
 body {
-background-image:url(data/images/background.png);
+background-image:url(data/images/background3.png);
 text-align: center;
 font-size: 20;
 font-weight: bold;    
