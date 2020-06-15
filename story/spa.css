@@ -27,19 +27,17 @@ width: 60%;
 
 body {
 background-image:url(data/images/background.png);
-text-align: justify;
+text-align: center;
 font-family: courier;
 font-size: 20;
 font-weight: bold;    
-font-family:Arial;
+font-family: Arial;
 width: 100%;
 min-height: 100%; 
 margin:0;
 padding:0;
 color:#D6FF99;
 }
-
-
 
 ul{
     float: right;
