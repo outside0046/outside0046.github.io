@@ -15,6 +15,17 @@ height: 100%;
 width: 60%;
 }
 
+#page {
+width:1045px;
+height:1450px;
+top:10px;
+background-image:url(images/page.png);
+margin:auto;
+margin-top:10px;
+padding:auto;
+}
+
+
 body {
 background-image:url(data/images/background.png);
 text-align: center;
