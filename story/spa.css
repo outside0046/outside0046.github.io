@@ -29,6 +29,16 @@ padding:0;
 color:#D6FF99;
 }
 
+#page {
+width:1045px;
+height:1450px;
+top:10px;
+background-image:url(story/images/page.png);
+margin:auto;
+margin-top:10px;
+padding:auto;
+}
+
 ul{
     float: right;
     display: inline;
