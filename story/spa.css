@@ -31,9 +31,7 @@ color:#D6FF99;
 }
 
 #page {
-width:1000px;
 min-width: 70%;   
-height:1450px;
 min-height: 100%;    
 top:0px;
 position: fixed;   
