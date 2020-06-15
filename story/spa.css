@@ -32,7 +32,9 @@ color:#D6FF99;
     }
 
 
-@media all and (max-width: 900px)
+@media all and 
+    (min-device-width: 300px)
+ and(max-device-width: 900px)
 { 
 body {
 background-image:url(data/images/background.png);
