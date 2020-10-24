@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+.column3 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    }
+	p {
+    text-indent: 30px; /* Отступ первой строки в пикселах */
+   }	
+	</style>	
+</head>
+
+<body>
+	<div class="column3">
+	<p><a href="index.html">HOME</a></p>
+	<p><a href="methodology.html">METHODOLOGY</a></p>
+	<p><a href="result.html">RESULTS AND DISCUSSION</a></p>
+	<p><a href="conclusion.html">CONCLUSIONS</a></p>
+	</div>
+	<h2 align="center">INTRODUCTION</h2>
+	<p>Building HVAC equipment routinely fails to satisfy performance expectations envisioned at
+design. Such failures often go unnoticed for extended periods of time. Additionally, higher
+expectations are being placed on a combination of different and often conflicting performance
+measures, such as energy efficiency, indoor air quality, comfort, reliability, limiting peak
+demand on utilities, etc. To meet these expectations, the processes, systems, and equipment used
+in both commercial and residential buildings are becoming increasingly sophisticated, which
+inadvertently causes more problems. This development both necessitates the use of automated
+diagnostics to ensure fault-free operation and enables diagnostic capabilities for the various
+building systems by providing a distributed platform that is powerful and flexible enough to perform fault detection and diagnostics (FDD).</p>
+<p>Hyvärinen and Kärki (1996) and Dexter and Pakanen (2001) document a number of FDD
+tools that are emerging from research. Most of these tools are equipment-specific, meaning they
+are meant to detect faults in a chiller, air-handling unit (AHU), etc. A number of studies to
+field-test equipment-specific FDD tools shows the need for another tool to act as an interface
+between equipment-specific FDD tools and the building operator in order to resolve conflicting
+fault reports from the various equipment-specific FDD tools and to present an integrated view of
+the HVAC system’s fault status to the operator. House et al. (2001) document an AHU fault that
+was actually caused by the unavailability of the chilled water plant. Schein and House (2003)
+describe several cases of terminal unit faults caused by problems with the supply air temperature
+and pressure provided by the associated AHU, as well as numerous terminal unit and AHU
+faults, which were traced to scheduling inconsistencies between terminal units, AHUs, and the
+chilled water plant.</p>
+<p>The common thread in the previous examples is the set of hierarchical relationships between
+the different pieces of equipment composing the HVAC system. Each AHU delivers supply air
+to the terminal units it serves, the chilled water plant supplies chilled water to the AHUs, and the
+boiler plant provides hot water to the AHUs and some terminal units. These relationships are
+each characterized by a single “source” supplying multiple “loads.” In each case, there is an air or water fluid interface between the source and the loads. The temperature and pressure of the
+fluid are maintained at setpoint values by the source equipment in order to enable the load
+equipment to operate as intended. Normally, each AHU and the terminal units it serves form a
+separate, distinct hierarchy. However, the output of each of the chillers is aggregated to form a
+single chilled water plant, which then supplies chilled water to all the loads in the system. Similarly, the output of the boilers is aggregated to form a single boiler plant supplying all the hot
+water loads in the system.</p>
+<p>In order to present an integrated view of an HVAC system’s fault status to the operator, the system-level FDD method developed in this project uses these hierarchical relationships to act as a filter, resolving conflicting fault reports from equipment-specific FDD tools. Knowledge of these
+relationships, combined with access to some selected raw data, also allows the method to perform
+FDD at the system level. The method is intended to function as an overall framework to process
+fault reports and raw data, providing a single system-wide fault status report to the operator.</p>
+<hr></hr>
+<details><mark>Jeffrey Schein </mark>is a mechanical engineer and<mark> Steven T. Bushby</mark> is group leader, Mechanical Systems and Controls Group,
+National Institute of Standards and Technology, Gaithersburg, Md.</details>	
+	<p align="center">1<p>
+</body>
+</html>

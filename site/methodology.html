@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+.column3 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    }
+	p {
+    text-indent: 30px; /* Отступ первой строки в пикселах */
+   }	
+	</style>	
+</head>
+<body>
+	<div class="column3">
+	<p><a href="index.html">HOME</a></p>
+	<p><a href="introduction.html">INTRODUCTION</a></p>
+	<p><a href="result.html">RESULTS AND DISCUSSION</a></p>
+	<p><a href="conclusion.html">CONCLUSIONS</a></p>
+	</div>
+	<h2 align="center">METHODOLOGY</h2>
+	<p>A number of different approaches to solve the problem of FDD integration and conflict resolution were considered. Bonarini and Sassaroli (1997) describe one possible approach in which a
+high-level structural model is used as a topological basis to link together models of each of the
+components of the mechanical system. Any of a number of different types of models could be
+used for the individual components of the system. One drawback of the model-based approach is
+the need for fault-free training data to tune the model. House et al. (2001) point out that it may
+be difficult to provide training data over the broad range of operating conditions for an HVAC
+system, which would make it difficult to develop a robust FDD method. Another drawback is
+the computational demand of a model-based solution, which requires that it run on a general-purpose computer. The embedded devices that make up the balance of the building automation system have limited available processor and memory capacity for model-based FDD
+analysis. In addition, the real-time operating systems that are used in embedded devices are not
+designed for the same flexibility of application as the general-purpose operating systems that are
+used in general-purpose computers. A model-based system-level FDD tool would require a
+computer connected to the building automation network, either an existing one that functions as
+an operator workstation or a computer/server dedicated to FDD.</p>
+<p>Another alternative under consideration was a case-based solution to conflict resolution similar to the one described by Ross et al. (2002). Briefly, a template is defined containing sufficient
+fields to describe the state of the HVAC system. Current data are entered into the template, and
+a database of historical cases is searched for the closest match to the current state. Several different algorithms can be used to determine which historical case is the best match. This approach,
+while less computationally demanding than the model-based approach, is essentially a database
+application and, as with the model-based solution, requires the processor, memory, and operating system of a general-purpose computer. This approach would require a large initial effort to
+develop a database containing examples of many different fault occurrences with different system types and operating and weather conditions. It would also be difficult to select an efficient
+set of search variables to ensure that the search accurately describes the current operational state
+and returns the correct historical case.</p>
+<p>Tzafestas (1989) explains that a rule-based approach has a number of advantages, including the
+transparency, flexibility, and adaptability obtained by expressing the knowledge base as a set of
+rules, explicitly separated from the decision-making framework. Visier et al. (1999) also refers to
+the adaptability of rule-based approaches, which can be modified by changing the rules to match
+the current system. Han et al. (1999) and Visier et al. (1999) both consider the transparency to the
+building operator as a major advantage of rule-based FDD. The rule-based approach was selected for these reasons, as well as its suitability for embedment in a supervisory controller. The most
+desirable platform for system-level FDD is a supervisory controller, not the operator workstation,
+so that the FDD algorithm can run in real-time and detect faults as they occur rather than processing logged data offline. This approach would also allow the FDD algorithm to be written in the
+manufacturer’s application programming language and executed as a component of the supervisory control logic. The results could then be reported to the building operator using the building
+automation system’s alarm/event-handling capability. Furthermore, there are many smaller building automation systems that do not have a local operator workstation but do have a supervisory
+controller. A supervisory controller has a faster, more powerful processor and more memory than
+a local equipment controller; however, it still has a real-time operating system and it must share
+its computing resources among scheduling, setpoint reset, alarm handling, trendlogging, and
+communication management/buffering applications as well as FDD. Only a rule-based system-level FDD method is consistent with embedment in a supervisory controller.</p>
+	<p>The proposed system-level FDD tool consists of two components: a hierarchical decision-making framework and a set of rules. The decision-making framework collects fault reports
+and raw data from the local equipment controllers and sends them to the rule set for evaluation.
+The rules are used to determine whether to pass any fault reports on to a human operator.
+Figure 1 is a schematic illustration of the framework.
+The fundamental methodology consists of four general principles for integrating equipment-specific fault reports and resolving conflicts given the source-load hierarchical relationships between the different pieces of equipment and subsystems in an HVAC system:</p>
+	<h4>1. Fault reports from a load are suppressed if there are any fault reports from a source serving
+that load</h4>
+	<img src="fig1.png">
+	<h4>Figure 1. The hierarchical decision-making framework.</h4>
+	<ul>
+	<li>A scheduling conflict between a source and any of the loads it serves is considered a fault
+associated with the source. Any fault reports from any of the loads served by the faulty
+source are suppressed.</li>	
+	<li>A fault in the air or water fluid interface between a source and the loads it serves is considered a fault associated with the source. Any fault reports from any of the loads served by the
+faulty source are suppressed.</li>
+	<li>Multiple fault reports from the loads served by a source are considered a fault associated with
+the source. Any fault reports from any of the loads served by the faulty source are suppressed.</li>	
+	</ul>
+	<p>In some cases, there may be unrelated faults in both source and load equipment; however, the
+methodology presented in this paper will cause any faults in the load equipment to be suppressed even if they are independent of the fault in the source equipment. Although this outcome
+is technically incorrect, in practice building maintenance staff have limited resources and will
+generally choose to focus their resources first on equipment at a higher level in the hierarchy.
+For example, given unrelated faults in an AHU and a terminal unit served by the AHU, the terminal unit fault will be suppressed. Since the AHU fault would be repaired first even if both
+faults were reported to the operator, the methodology effectively prioritizes unrelated fault
+reports from equipment at different levels in the hierarchy.</p>
+	<p>The rule set was generated by applying these general principles to the hierarchical subsystems
+in an HVAC system (see Table 1). A software implementation combining the hierarchical decision-making framework and the rule set was developed using the algorithm illustrated in
+Figure 2. To ensure quasi-steady-state conditions, the rule set is not evaluated during the first
+two hours after system start-up.
+The rule set is applicable to systems consisting of a boiler plant, a chiller plant, one or more
+AHUs that receive hot water from the boiler plant and chilled water from the chiller plant, and
+terminal units that all receive supply air from the AHUs and some of which may receive hot
+water from the boiler plant. The rule set could easily be modified for systems that employ staged
+heating or cooling directly at the AHU rather than a central boiler or chiller plant by eliminating
+the rules referring to the boiler or chiller plant, respectively. To adapt the rule set for single-zone
+AHUs, the rules referring to terminal units should be eliminated</p>
+	<p>A fault threshold expresses the severity of a fault required to trigger an alarm and is necessary
+because of uncertainty in the data and operating conditions. If a threshold is too low, normal
+variation in the data and operating conditions may trigger false alarms, which may, in turn,
+cause the suppression of real fault reports from other equipment in the hierarchy. If a threshold
+is too high, only the most severe faults will be detected. Less severe faults affecting equipment
+lower in the hierarchy may result in fault reports from the affected equipment that should be
+suppressed. Effective values for the thresholds used in Rules 8 through 17 of Table 1 were determined through trial and error.</p>
+	<p align="center">2</p>
+	
+</body>
+</html>
