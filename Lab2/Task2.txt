@@ -1,0 +1,11 @@
+HTML 5 - laboratory 2
+
+Tasks:
+
+Create the html5 webpage with the following elements:
+
+1. Put into the webpage sound- and videofile in at least two formats each (<audio> and <video> tags). The objects shouold have the menu for the playback control.
+2. Design the vector logo and put it to the webpage (<svg> tag) in the file .svg, external to the html code.
+3. Selected text fragments should be formatted using the user-defined tag, describing: font size, type, color and backgroud color.
+4. Embed in the webpage the Google Maps object (using JS!!!). Write in JS the function to set map attributes: centering (center), zoom level (zoom) and map type (mapTypeId, possible values are ROADMAP, SATELLITE, HYBRID, TERRAIN). Set the map size to 500 points vertically and horizontally.
+5. Design the webform, containing new HTML5 elements, i.e. <datalist> and <output>.
